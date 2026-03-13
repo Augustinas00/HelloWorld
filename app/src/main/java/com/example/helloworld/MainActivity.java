@@ -18,5 +18,11 @@ public class MainActivity extends AppCompatActivity {
         btn.setOnClickListener(v -> {
             tv.setText("Labas!");
         });
+
+        Button colorBtn = findViewById(R.id.colorButton);
+
+        colorBtn.setOnClickListener(v -> {
+            tv.setTextColor(android.graphics.Color.RED);
+        });
     }
 }
